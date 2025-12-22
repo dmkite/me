@@ -1,17 +1,7 @@
-import Header from './components/Header';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
+import Landing from './pages/landing';
 
 function App() {
-  return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Header />
-      <main style={{ flex: 1 }}>
-        <MainContent />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <Landing />;
 }
 
 export default App;
