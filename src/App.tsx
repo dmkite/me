@@ -5,10 +5,12 @@ import OccultOfPersonality from './pages/OccultOfPersonality';
 import Gallery from './pages/Gallery';
 import Development from './pages/Development';
 import Contact from './pages/Contact';
+import Menu from './components/menu';
 
 function App() {
   return (
     <BrowserRouter>
+      <Menu />
       <Routes>
         <Route path="/me" element={<Landing />} />
         <Route path="/me/artist-statement" element={<ArtistStatement />} />

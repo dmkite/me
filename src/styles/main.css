@@ -34,6 +34,78 @@ p {
     font-size: 1.25rem;
 }
 
+.project-page {
+  width: 100%;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.project-strip {
+  display: flex;
+  height: 100%;
+  scroll-snap-type: x mandatory;
+}
+
+.project-panel {
+  flex: 0 0 100vw;
+  height: 100%;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  background: #555;
+}
+
+.project-image {
+    height:100%;
+    width:100%;
+    background: #f09f93;
+    position:relative;
+    overflow:hidden;
+}
+
+.project-image .circle {
+    width: 12vw;
+    padding:12vw;
+    background:#efb74d;
+    border-radius:50%;
+    position:absolute;
+    box-sizing: border-box;
+}
+
+.project-image .circle:first-of-type {
+    top: -5%;
+    right: -5%;
+}
+
+.project-image .circle:last-of-type {
+bottom: -5%;
+left: -5%;
+}
+
+.image-holder {
+    margin-top:5%;
+    position:absolute;
+    width:30rem;
+    height:49rem;
+    top:0;
+    left:40%;
+    border:3px solid #111;
+    border-radius: 2%;
+}
+
+.image-holder img {
+       width:100%;
+       position:absolute;
+       bottom:-3%;
+       right: -4%;
+       border-radius:4%
+}
+
 .landing-container {
   position: relative;
   width: 100%;
@@ -66,10 +138,14 @@ p {
 }
 
 .landing-header {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.75rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 1.5rem 1.75rem;
+  padding: 0;
+  z-index: 3;
 }
 
 .landing-title {
@@ -92,6 +168,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   z-index: 3;
+  pointer-events: auto;
 }
 
 .hamburger__bar {
@@ -124,7 +201,7 @@ p {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease, background 0.25s ease;
-  z-index: 2;
+  z-index: 10;
 }
 
 .side-menu__backdrop--visible {
@@ -143,6 +220,8 @@ p {
   transition: transform 0.25s ease;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.4);
   padding: 2rem 1.75rem;
+  z-index: 11;
+  pointer-events: auto;
 }
 
 .side-menu--open {
@@ -175,20 +254,6 @@ p {
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* Artist Statement layout */
-
-.artist-page {
-  min-height: 100vh;
-  background: #ffffff;
-  color: #ffffff;
-}
-
-.artist-hero {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  min-height: 55vh;
-}
-
 .artist-hero-left {
   background: #f26fa5;
   display: flex;
@@ -202,10 +267,6 @@ p {
   display: block;
   width: 100%;
   color: white;
-}
-
-
-.artist-hero-left h1 {
   margin: 0;
   font-size: 2.8rem;
   line-height: 1.15;
@@ -273,54 +334,6 @@ justify-content: center;
     margin: 0 1rem;
 }
 
-.artist-lower-right {
-  position: relative;
-  background: #ffffff;
-  color: #f26fa5;
-  padding: 2.5rem 3rem 3rem 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.artist-photo-wrapper {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  margin-left: auto;
-}
-
-.artist-photo-ring {
-  position: absolute;
-  bottom: -40px;
-  left: -40px;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  border: 18px solid #f26fa5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* Substitute your own local image if you prefer */
-.artist-photo-circle {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: url('https://images.pexels.com/photos/45911/bird-budgie-budgerigar-yellow-45911.jpeg?auto=compress&cs=tinysrgb&w=800')
-    center/cover no-repeat;
-}
-
-.artist-lower-callout {
-  max-width: 240px;
-  margin-top: 2rem;
-  margin-left: auto;
-  font-size: 1.05rem;
-  line-height: 1.5;
-}
-
 .flex {
   display: flex;
 }
@@ -352,18 +365,11 @@ justify-content: center;
 
 
 @media (max-width: 1024px) {
-  .artist-hero,
-  .artist-lower {
-    grid-template-columns: 1.2fr 1fr;
-  }
-
   .artist-hero-left h1 {
     font-size: 2.2rem;
   }
 
-  .artist-hero-right,
-  .artist-lower-left,
-  .artist-lower-right {
+  .artist-lower-left {
     padding: 2rem;
   }
 }
@@ -380,19 +386,8 @@ justify-content: center;
 
 
 @media (max-width: 768px) {
-  .artist-page {
-    overflow-y: auto;
-  }
-
-  .artist-hero,
-  .artist-lower {
-    grid-template-columns: 1fr;
-  }
-
   .artist-hero-left,
-  .artist-hero-right,
-  .artist-lower-left,
-  .artist-lower-right {
+  .artist-lower-left {
     padding: 2rem 1.5rem;
   }
 
@@ -402,32 +397,13 @@ justify-content: center;
     width: 220px;
     height: 220px;
   }
-
-  .artist-photo-wrapper {
-    margin: 0 auto;
-  }
-
-  .artist-lower-callout {
-    margin-left: 0;
-    margin-top: 2.5rem;
-    text-align: center;
-  }
 }
 
 @media (max-width: 480px) {
   .artist-hero-left h1 {
     font-size: 1.8rem;
   }
-
-  .artist-hero-text-block h2 {
-    font-size: 1.2rem;
-  }
-
-  .artist-photo-ring {
-    width: 220px;
-    height: 220px;
-    border-width: 14px;
-    bottom: -30px;
-    left: -20px;
-  }
 }
+
+
+

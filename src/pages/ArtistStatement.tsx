@@ -1,5 +1,6 @@
 import '../styles/main.css';
 import profPic from '../assets/prof-pic.png';
+import Menu from '../components/Menu';
 
  const ArtistSplash = () => {
     return (
@@ -44,6 +45,8 @@ import profPic from '../assets/prof-pic.png';
 
 function ArtistStatement() {
   return (
+      <>
+      <Menu/>
       <section className="flex">
       <section className="col">
         <ArtistSplash/>
@@ -51,6 +54,7 @@ function ArtistStatement() {
     </section>
         <ArtistDescription/>
     </section>
+      </>
   );
 
 

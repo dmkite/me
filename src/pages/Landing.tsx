@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import splashVideo from '../assets/splash-video.mp4';
 import '../styles/main.css';
-import Menu from '../components/menu';
 
 function Landing() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -27,8 +26,6 @@ function Landing() {
       <div className="landing-scrim" />
 
       <div className="landing-content">
-        <Menu />
-
         <div className="landing-title">
           <h1>Dylan Kite</h1>
         </div>
