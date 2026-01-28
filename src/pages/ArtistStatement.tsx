@@ -29,7 +29,8 @@ function ArtistStatement() {
             nostalgia as a material, obsession as a compass, and the internet as a haunted
             archive. The goal isn’t to explain anything—it’s to build an atmosphere you can
             stand inside, where beauty feels slightly dangerous and the familiar becomes
-            strangely new.
+            strangely new. I’m based in the Ann Arbor / Ypsilanti (Ypsi) area, and a lot of
+            the work starts as a local obsession that mutates into a universal one.
           </p>
         </section>
       </div>

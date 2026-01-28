@@ -171,20 +171,7 @@ p {
   background: rgba(255, 255, 255, 0.08);
 }
 
-.contact {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact iframe {
-  border: 3rem solid #4cb7bd;
-  border-radius: 4%;
-}
-
-.occult-page {
+.contact-page {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -192,7 +179,64 @@ p {
   color: #fff;
 }
 
-.occult-hero {
+.contact-hero {
+  position: relative;
+  padding: 5rem 1.5rem 2rem;
+}
+
+.contact-hero__content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-hero__title {
+  margin: 0;
+}
+
+.contact-hero__desc {
+  margin: 1rem 0 0;
+  max-width: 720px;
+  opacity: 0.92;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.contact-content {
+  padding: 0 1.5rem 4rem;
+}
+
+.contact-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+}
+
+.contact-card__frame {
+  width: 100%;
+  height: min(78vh, 900px);
+}
+
+.contact-card__iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.occult-page,
+.gallery-page {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #000;
+  color: #fff;
+}
+
+.occult-hero,
+.gallery-hero {
   position: relative;
   height: 60vh;
   min-height: 420px;
@@ -201,7 +245,8 @@ p {
   padding: 2rem;
 }
 
-.occult-hero__image {
+.occult-hero__image,
+.gallery-hero__image {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -210,14 +255,16 @@ p {
   z-index: 0;
 }
 
-.occult-hero__overlay {
+.occult-hero__overlay,
+.gallery-hero__overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
   z-index: 1;
 }
 
-.occult-hero__title {
+.occult-hero__title,
+.gallery-hero__title {
   position: relative;
   z-index: 2;
   margin: 0;
@@ -226,7 +273,8 @@ p {
   line-height: 1.1;
 }
 
-.occult-hero__desc {
+.occult-hero__desc,
+.gallery-hero__desc {
   position: relative;
   z-index: 2;
   margin: 1rem 0 0;
@@ -236,11 +284,13 @@ p {
   font-size: 1rem;
 }
 
-.occult-gallery {
+.occult-gallery,
+.gallery-gallery {
   padding: 3rem 1.5rem 4rem;
 }
 
-.occult-gallery__grid {
+.occult-gallery__grid,
+.gallery-gallery__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
@@ -248,7 +298,8 @@ p {
   gap: 1.5rem;
 }
 
-.occult-card {
+.occult-card,
+.gallery-card {
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 12px;
   overflow: hidden;
@@ -257,39 +308,46 @@ p {
   transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
 }
 
-.occult-card:hover {
+.occult-card:hover,
+.gallery-card:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.22);
 }
 
-.occult-card:focus {
+.occult-card:focus,
+.gallery-card:focus {
   outline: 2px solid rgba(255, 255, 255, 0.45);
   outline-offset: 2px;
 }
 
-.occult-card__image {
+.occult-card__image,
+.gallery-card__image {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
 }
 
-.occult-card__body {
+.occult-card__body,
+.gallery-card__body {
   padding: 1rem 1rem 1.25rem;
 }
 
-.occult-card__title {
+.occult-card__title,
+.gallery-card__title {
   margin: 0;
 }
 
-.occult-card__desc {
+.occult-card__desc,
+.gallery-card__desc {
   margin: 0.5rem 0 0;
   opacity: 0.9;
   font-size: 1rem;
 }
 
-.occult-modal__backdrop {
+.occult-modal__backdrop,
+.gallery-modal__backdrop {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.72);
@@ -299,7 +357,8 @@ p {
   z-index: 50;
 }
 
-.occult-modal {
+.occult-modal,
+.gallery-modal {
   width: min(1100px, 100%);
   max-height: min(90vh, 900px);
   overflow: auto;
@@ -310,7 +369,8 @@ p {
   padding: 1.25rem;
 }
 
-.occult-modal__close {
+.occult-modal__close,
+.gallery-modal__close {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -322,11 +382,13 @@ p {
   cursor: pointer;
 }
 
-.occult-modal__close:hover {
+.occult-modal__close:hover,
+.gallery-modal__close:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
-.occult-modal__content {
+.occult-modal__content,
+.gallery-modal__content {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -334,22 +396,26 @@ p {
   align-items: start;
 }
 
-.occult-modal__image {
+.occult-modal__image,
+.gallery-modal__image {
   width: 100%;
   height: auto;
   border-radius: 12px;
   display: block;
 }
 
-.occult-modal__text {
+.occult-modal__text,
+.gallery-modal__text {
   padding: 0.25rem 0;
 }
 
-.occult-modal__title {
+.occult-modal__title,
+.gallery-modal__title {
   margin: 0;
 }
 
-.occult-modal__desc {
+.occult-modal__desc,
+.gallery-modal__desc {
   margin: 0.75rem 0 0;
   opacity: 0.9;
   font-size: 1rem;
@@ -415,8 +481,9 @@ p {
 
 .development-hero {
   position: relative;
-  height: 60vh;
-  min-height: 420px;
+  min-height: 60vh;
+  padding: 5rem 1.5rem 3rem;
+  overflow: hidden;
 }
 
 .development-hero__image {
@@ -436,11 +503,10 @@ p {
 .development-hero__content {
   position: relative;
   z-index: 1;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 5rem 1.5rem 3rem;
+  gap: 1rem;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -450,7 +516,7 @@ p {
 }
 
 .development-hero__desc {
-  margin: 1rem 0 0;
+  margin: 0;
   max-width: 720px;
   opacity: 0.92;
   font-size: 1.05rem;
@@ -509,6 +575,7 @@ p {
 .development-links {
   display: flex;
   gap: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 900px) {
