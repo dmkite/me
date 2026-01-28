@@ -44,27 +44,27 @@ function Menu() {
         >
           <ul className="side-menu__list">
             <li className="side-menu__item">
-              <button type="button" onClick={() => handleNavigate('/me/artist-statement')}>
+              <button type="button" onClick={() => handleNavigate('/artist-statement')}>
                 Artist Statement
               </button>
             </li>
             <li className="side-menu__item">
-              <button type="button" onClick={() => handleNavigate('/me/occult-of-personality')}>
+              <button type="button" onClick={() => handleNavigate('/occult-of-personality')}>
                 Occult of Personality
               </button>
             </li>
             <li className="side-menu__item">
-              <button type="button" onClick={() => handleNavigate('/me/gallery')}>
+              <button type="button" onClick={() => handleNavigate('/gallery')}>
                 Gallery
               </button>
             </li>
             <li className="side-menu__item">
-              <button type="button" onClick={() => handleNavigate('/me/development')}>
+              <button type="button" onClick={() => handleNavigate('/development')}>
                 Development
               </button>
             </li>
             <li className="side-menu__item">
-              <button type="button" onClick={() => handleNavigate('/me/contact')}>
+              <button type="button" onClick={() => handleNavigate('/contact')}>
                 Contact
               </button>
             </li>

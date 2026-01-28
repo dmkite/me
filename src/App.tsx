@@ -9,15 +9,15 @@ import Menu from './components/menu';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/me">
       <Menu />
       <Routes>
-        <Route path="/me" element={<Landing />} />
-        <Route path="/me/artist-statement" element={<ArtistStatement />} />
-        <Route path="/me/occult-of-personality" element={<OccultOfPersonality />} />
-        <Route path="/me/gallery" element={<Gallery />} />
-        <Route path="/me/development" element={<Development />} />
-        <Route path="/me/contact" element={<Contact />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/artist-statement" element={<ArtistStatement />} />
+        <Route path="/occult-of-personality" element={<OccultOfPersonality />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/development" element={<Development />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Landing />} />
       </Routes>
     </BrowserRouter>
