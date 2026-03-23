@@ -17,20 +17,29 @@ function ArtistStatement() {
         <section className="artist-statement__content">
           <h1 className="artist-statement__title">Artist Statement</h1>
           <p className="artist-statement__text">
-            I make work for the moment right before language arrives—when you can still feel
-            meaning as temperature, pressure, and rhythm. My practice moves between image,
-            object, and small systems: photographs that behave like evidence from a parallel
-            life, installations that read like rooms with a secret agenda, and digital pieces
-            that glitch on purpose—because truth rarely holds a clean edge.
+            My work asks the question: How do we <em>really</em> know someone?{‘ ‘}
+            <em>The Occult of Personality</em> is a series of linocut portraits—a
+            pairing of figures from pop culture and the 22 cards of the Major Arcana.
+            Tarot is deeply personal, as is our relationship with the musicians we
+            love, but is that relationship real? Do the fragments add up to a whole?
           </p>
           <p className="artist-statement__text">
-            I’m drawn to the way symbols travel: how a tarot card, a celebrity face, a logo,
-            or a family snapshot can become a shared myth with private consequences. I treat
-            nostalgia as a material, obsession as a compass, and the internet as a haunted
-            archive. The goal isn’t to explain anything—it’s to build an atmosphere you can
-            stand inside, where beauty feels slightly dangerous and the familiar becomes
-            strangely new. I’m based in the Ann Arbor / Ypsilanti (Ypsi) area, and a lot of
-            the work starts as a local obsession that mutates into a universal one.
+            I carve each portrait through reduction, removing material and pulling
+            lightness from the dark. The image emerges slowly, as if from the shadows,
+            much like a parasocial relationship does. It never springs forth fully
+            formed, but it accumulates until it mimics something real. Printmaking is
+            the original viral media; its capacity for mass production and
+            proliferation was a vanguard of the internet age—the way the internet
+            amplifies our fixation on celebrities. The prints are editions: first
+            editions are small and variable, second editions are runs of fifty,
+            because the urge to collect, to possess the complete set, echoes the
+            impulse that drives us to claim ownership over the people we admire.
+          </p>
+          <p className="artist-statement__text">
+            The portraiture should stand on its own, but if you know the artist, and
+            you know the card, you should be getting something more—a tension between
+            what the archetype promises and what we can actually know about the person
+            donning it.
           </p>
         </section>
       </div>
