@@ -28,6 +28,7 @@ function Landing() {
       <div className="landing-content">
         <div className="landing-title">
           <h1>Dylan Kite</h1>
+          <p className="landing-subtitle">Printmaker. Engineer. Teacher.</p>
         </div>
       </div>
     </div>
