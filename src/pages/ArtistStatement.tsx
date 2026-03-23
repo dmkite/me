@@ -17,7 +17,7 @@ function ArtistStatement() {
         <section className="artist-statement__content">
           <h1 className="artist-statement__title">Artist Statement</h1>
           <p className="artist-statement__text">
-            My work asks the question: How do we <em>really</em> know someone?{‘ ‘}
+            My work asks the question: How do we <em>really</em> know someone?{' '}
             <em>The Occult of Personality</em> is a series of linocut portraits—a
             pairing of figures from pop culture and the 22 cards of the Major Arcana.
             Tarot is deeply personal, as is our relationship with the musicians we
