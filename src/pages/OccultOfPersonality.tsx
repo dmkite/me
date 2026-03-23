@@ -173,8 +173,8 @@ function OccultOfPersonality() {
     <ScrollingGallery
       namespace="occult"
       heroImage={blankFull}
-      heroTitle="Tarot is personal. Celebrity is universal."
-      heroDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      heroTitle="Occult of Personality"
+      heroDesc="Tarot is personal. Celebrity is universal."
       items={galleryItems}
     />
   );
