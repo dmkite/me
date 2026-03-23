@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 export type ScrollingGalleryItem = {
+  thumbnail?: string;
   image: string;
   title: string;
   desc: string;
@@ -45,7 +46,7 @@ function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: 
               }}
             >
               <img
-                src={item.image}
+                src={item.thumbnail ?? item.image}
                 alt={item.title}
                 loading="lazy"
                 className={`${namespace}-card__image`}
