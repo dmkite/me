@@ -29,10 +29,8 @@ function ArtistStatement() {
             much like a parasocial relationship does. It never springs forth fully
             formed, but it accumulates until it mimics something real. Printmaking is
             the original viral media; its capacity for mass production and
-            proliferation was a vanguard of the internet age—the way the internet
-            amplifies our fixation on celebrities. The prints are editions: first
-            editions are small and variable, second editions are runs of fifty,
-            because the urge to collect, to possess the complete set, echoes the
+            proliferation was a vanguard of the internet age, which amplifies our 
+            fixation on celebrities. The desire to own the complete set echoes the 
             impulse that drives us to claim ownership over the people we admire.
           </p>
           <p className="artist-statement__text">
