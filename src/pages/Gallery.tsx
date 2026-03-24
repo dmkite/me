@@ -4,7 +4,7 @@ import ScrollingGallery, { type ScrollingGalleryItem } from '../components/Scrol
 // Thumbnails (600w webp) for gallery grid
 import aloofThumb from '../assets/gallery/Aloof.jpg?w=600&format=webp&imagetools';
 import amyStudyThumb from '../assets/gallery/AmyStudy.jpg?w=600&format=webp&imagetools';
-import areYouAWitchThumb from '../assets/gallery/AreYouAWitch?.jpg?w=600&format=webp&imagetools';
+import areYouAWitchThumb from '../assets/gallery/AreYouAWitch.jpg?w=600&format=webp&imagetools';
 import cyanotype1Thumb from '../assets/gallery/Cyanotype1.jpg?w=600&format=webp&imagetools';
 import cyanotype2Thumb from '../assets/gallery/Cyanotype2.jpg?w=600&format=webp&imagetools';
 import dianaThumb from '../assets/gallery/Diana.jpg?w=600&format=webp&imagetools';
@@ -23,7 +23,7 @@ import voyager1Thumb from '../assets/gallery/Voyager1.jpg?w=600&format=webp&imag
 // Full size (1200w webp) for modal view
 import aloofFull from '../assets/gallery/Aloof.jpg?w=1200&format=webp&imagetools';
 import amyStudyFull from '../assets/gallery/AmyStudy.jpg?w=1200&format=webp&imagetools';
-import areYouAWitchFull from '../assets/gallery/AreYouAWitch?.jpg?w=1200&format=webp&imagetools';
+import areYouAWitchFull from '../assets/gallery/AreYouAWitch.jpg?w=1200&format=webp&imagetools';
 import cyanotype1Full from '../assets/gallery/Cyanotype1.jpg?w=1200&format=webp&imagetools';
 import cyanotype2Full from '../assets/gallery/Cyanotype2.jpg?w=1200&format=webp&imagetools';
 import dianaFull from '../assets/gallery/Diana.jpg?w=1200&format=webp&imagetools';
