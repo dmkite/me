@@ -54,7 +54,7 @@ const galleryItems: ScrollingGalleryItem[] = [
   { thumbnail: tangledThumb, image: tangledFull, title: 'Tangled', desc: '11 x 17, Acryllic' },
   { thumbnail: temperanceThumb, image: temperanceFull, title: 'Temperance', desc: '8.5 x 11, Relief Print' },
   { thumbnail: theStudyThumb, image: theStudyFull, title: 'The Study', desc: '5 x 8 x 10, Wood' },
-  { thumbnail: theTowerThumb, image: theTowerFull, title: 'The Tower', desc: '8.5 x 11, Relieft print' },
+  { thumbnail: theTowerThumb, image: theTowerFull, title: 'The Tower', desc: '8.5 x 11, Relief print' },
   { thumbnail: thingsWereSimplerBackThenThumb, image: thingsWereSimplerBackThenFull, title: 'Things Were Simpler Back Then', desc: '12 x 16, Acryllic' },
   { thumbnail: voyager1Thumb, image: voyager1Full, title: 'Voyager 1', desc: '8.5 x 11, Screen Print' },
 ];
