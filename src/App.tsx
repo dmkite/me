@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Landing from './pages/Landing';
 import ArtistStatement from './pages/ArtistStatement';
 import OccultOfPersonality from './pages/OccultOfPersonality';
@@ -7,9 +8,28 @@ import Development from './pages/Development';
 import Contact from './pages/Contact';
 import Menu from './components/menu';
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function PageViewTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.gtag?.('event', 'page_view', {
+      page_path: location.pathname + location.search,
+    });
+  }, [location]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter basename="/me">
+      <PageViewTracker />
       <Menu />
       <Routes>
         <Route path="/" element={<Landing />} />
