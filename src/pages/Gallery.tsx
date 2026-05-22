@@ -11,7 +11,7 @@ import dianaThumb from '../assets/gallery/Diana.jpg?w=600&format=webp&imagetools
 import eyesThumb from '../assets/gallery/Eyes.jpg?w=600&format=webp&imagetools';
 import ginkgoThumb from '../assets/gallery/Ginkgo.jpg?w=600&format=webp&imagetools';
 import ninaStudyThumb from '../assets/gallery/NinaStudy.jpg?w=600&format=webp&imagetools';
-import powThumb from '../assets/gallery/Pow!.jpg?w=600&format=webp&imagetools';
+import readBetweenTheLinesThumb from '../assets/gallery/ReadBetweenTheLines.jpg?w=600&format=webp&imagetools';
 import relicThumb from '../assets/gallery/Relic.jpg?w=600&format=webp&imagetools';
 import tangledThumb from '../assets/gallery/Tangled.jpg?w=600&format=webp&imagetools';
 import temperanceThumb from '../assets/gallery/Temperance.jpg?w=600&format=webp&imagetools';
@@ -30,7 +30,7 @@ import dianaFull from '../assets/gallery/Diana.jpg?w=1200&format=webp&imagetools
 import eyesFull from '../assets/gallery/Eyes.jpg?w=1200&format=webp&imagetools';
 import ginkgoFull from '../assets/gallery/Ginkgo.jpg?w=1200&format=webp&imagetools';
 import ninaStudyFull from '../assets/gallery/NinaStudy.jpg?w=1200&format=webp&imagetools';
-import powFull from '../assets/gallery/Pow!.jpg?w=1200&format=webp&imagetools';
+import readBetweenTheLinesFull from '../assets/gallery/ReadBetweenTheLines.jpg?w=1200&format=webp&imagetools';
 import relicFull from '../assets/gallery/Relic.jpg?w=1200&format=webp&imagetools';
 import tangledFull from '../assets/gallery/Tangled.jpg?w=1200&format=webp&imagetools';
 import temperanceFull from '../assets/gallery/Temperance.jpg?w=1200&format=webp&imagetools';
@@ -49,7 +49,7 @@ const galleryItems: ScrollingGalleryItem[] = [
   { thumbnail: eyesThumb, image: eyesFull, title: 'Eyes', desc: '5 x 3, Pen & Ink, Water Color' },
   { thumbnail: ginkgoThumb, image: ginkgoFull, title: 'Ginkgo', desc: '8.5 x 11, Screen Print' },
   { thumbnail: ninaStudyThumb, image: ninaStudyFull, title: 'Nina Study', desc: '8.5 x 11, Screen Print' },
-  { thumbnail: powThumb, image: powFull, title: 'Pow!', desc: '30 x 40, Collage' },
+  { thumbnail: readBetweenTheLinesThumb, image: readBetweenTheLinesFull, title: 'Read Between the Lines', desc: '30 x 40, Collage' },
   { thumbnail: relicThumb, image: relicFull, title: 'Relic', desc: '18 x 24, Wood Burning' },
   { thumbnail: tangledThumb, image: tangledFull, title: 'Tangled', desc: '11 x 17, Acryllic' },
   { thumbnail: temperanceThumb, image: temperanceFull, title: 'Temperance', desc: '8.5 x 11, Relief Print' },
