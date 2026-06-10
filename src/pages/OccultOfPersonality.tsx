@@ -9,12 +9,15 @@ import theHierophantThumb from '../assets/occult_of_personality/5_TheHierophant_
 import theChariotThumb from '../assets/occult_of_personality/7_TheChariot_2Ed.jpg?w=600&format=webp&imagetools';
 import strengthThumb from '../assets/occult_of_personality/8_Strength_2Ed.jpg?w=600&format=webp&imagetools';
 import theHermitThumb from '../assets/occult_of_personality/9_TheHermit_2Ed.jpg?w=600&format=webp&imagetools';
+import wheelOfFortuneThumb from '../assets/occult_of_personality/10_WheelOfFortune_2Ed.jpg?w=600&format=webp&imagetools';
 import justiceThumb from '../assets/occult_of_personality/11_Justice_2Ed.jpg?w=600&format=webp&imagetools';
 import theHangedManThumb from '../assets/occult_of_personality/12_TheHangedMan_2Ed.jpg?w=600&format=webp&imagetools';
 import deathThumb from '../assets/occult_of_personality/13_Death_2Ed.jpg?w=600&format=webp&imagetools';
 import theDevilThumb from '../assets/occult_of_personality/15_TheDevil_2Ed.jpg?w=600&format=webp&imagetools';
+import theStarThumb from '../assets/occult_of_personality/17_TheStar_2Ed.jpg?w=600&format=webp&imagetools';
 import theMoonThumb from '../assets/occult_of_personality/18_TheMoon_2Ed.jpg?w=600&format=webp&imagetools';
 import theSunThumb from '../assets/occult_of_personality/19_TheSun_2Ed.jpg?w=600&format=webp&imagetools';
+import judgementThumb from '../assets/occult_of_personality/20_Judgement_2Ed.jpg?w=600&format=webp&imagetools';
 import theWorldThumb from '../assets/occult_of_personality/21_TheWorld_2Ed.jpg?w=600&format=webp&imagetools';
 
 // Full size (1200w webp) for modal view
@@ -25,12 +28,15 @@ import theHierophantFull from '../assets/occult_of_personality/5_TheHierophant_2
 import theChariotFull from '../assets/occult_of_personality/7_TheChariot_2Ed.jpg?w=1200&format=webp&imagetools';
 import strengthFull from '../assets/occult_of_personality/8_Strength_2Ed.jpg?w=1200&format=webp&imagetools';
 import theHermitFull from '../assets/occult_of_personality/9_TheHermit_2Ed.jpg?w=1200&format=webp&imagetools';
+import wheelOfFortuneFull from '../assets/occult_of_personality/10_WheelOfFortune_2Ed.jpg?w=1200&format=webp&imagetools';
 import justiceFull from '../assets/occult_of_personality/11_Justice_2Ed.jpg?w=1200&format=webp&imagetools';
 import theHangedManFull from '../assets/occult_of_personality/12_TheHangedMan_2Ed.jpg?w=1200&format=webp&imagetools';
 import deathFull from '../assets/occult_of_personality/13_Death_2Ed.jpg?w=1200&format=webp&imagetools';
 import theDevilFull from '../assets/occult_of_personality/15_TheDevil_2Ed.jpg?w=1200&format=webp&imagetools';
+import theStarFull from '../assets/occult_of_personality/17_TheStar_2Ed.jpg?w=1200&format=webp&imagetools';
 import theMoonFull from '../assets/occult_of_personality/18_TheMoon_2Ed.jpg?w=1200&format=webp&imagetools';
 import theSunFull from '../assets/occult_of_personality/19_TheSun_2Ed.jpg?w=1200&format=webp&imagetools';
+import judgementFull from '../assets/occult_of_personality/20_Judgement_2Ed.jpg?w=1200&format=webp&imagetools';
 import theWorldFull from '../assets/occult_of_personality/21_TheWorld_2Ed.jpg?w=1200&format=webp&imagetools';
 
 const galleryItems: ScrollingGalleryItem[] = [
@@ -95,8 +101,8 @@ const galleryItems: ScrollingGalleryItem[] = [
     desc: 'Solitude, introspection, and the search for deeper truth. Step away from noise and listen to what silence teaches.',
   },
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: wheelOfFortuneThumb,
+    image: wheelOfFortuneFull,
     title: 'Wheel of Fortune',
     desc: 'Change, cycles, and forces beyond your control. What rises will fall; what falls will rise. Find your center within the turning.',
   },
@@ -137,8 +143,8 @@ const galleryItems: ScrollingGalleryItem[] = [
     desc: 'Sudden upheaval and the destruction of false structures. What collapses needed to fall. From the rubble, something honest emerges.',
   },
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: theStarThumb,
+    image: theStarFull,
     title: 'The Star',
     desc: 'Hope renewed after devastation. Calm, clarity, and faith restored. Trust that what was broken is mending.',
   },
@@ -155,8 +161,8 @@ const galleryItems: ScrollingGalleryItem[] = [
     desc: 'Joy, vitality, and success without ambiguity. Clarity after confusion. Warmth, confidence, and things going right.',
   },
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: judgementThumb,
+    image: judgementFull,
     title: 'Judgement',
     desc: 'Resurrection, reckoning, and a call to account. Evaluate yourself honestly — not with guilt, but with clarity for renewal.',
   },
