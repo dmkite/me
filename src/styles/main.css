@@ -173,6 +173,7 @@ p {
   border: none;
   padding: 0.5rem 0;
   font: inherit;
+  font-family: 'Lato', sans-serif;
   color: inherit;
   text-align: left;
   cursor: pointer;
