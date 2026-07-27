@@ -3,9 +3,11 @@ import ScrollingGallery, { type ScrollingGalleryItem } from '../components/Scrol
 
 // Thumbnails (600w webp) for gallery grid
 import blankThumb from '../assets/occult_of_personality/0_Blank_0Ed.jpg?w=600&format=webp&imagetools';
+import theFoolThumb from '../assets/occult_of_personality/0_TheFool_2Ed.jpg?w=600&format=webp&imagetools';
 import theMagicianThumb from '../assets/occult_of_personality/1_TheMagician_2Ed.jpg?w=600&format=webp&imagetools';
 import theEmperorThumb from '../assets/occult_of_personality/4_TheEmperor_2Ed.jpg?w=600&format=webp&imagetools';
 import theHierophantThumb from '../assets/occult_of_personality/5_TheHierophant_2Ed.jpg?w=600&format=webp&imagetools';
+import theLoversThumb from '../assets/occult_of_personality/6_TheLovers_2Ed.jpg?w=600&format=webp&imagetools';
 import theChariotThumb from '../assets/occult_of_personality/7_TheChariot_2Ed.jpg?w=600&format=webp&imagetools';
 import strengthThumb from '../assets/occult_of_personality/8_Strength_2Ed.jpg?w=600&format=webp&imagetools';
 import theHermitThumb from '../assets/occult_of_personality/9_TheHermit_2Ed.jpg?w=600&format=webp&imagetools';
@@ -22,9 +24,11 @@ import theWorldThumb from '../assets/occult_of_personality/21_TheWorld_2Ed.jpg?w
 
 // Full size (1200w webp) for modal view
 import blankFull from '../assets/occult_of_personality/0_Blank_0Ed.jpg?w=1200&format=webp&imagetools';
+import theFoolFull from '../assets/occult_of_personality/0_TheFool_2Ed.jpg?w=1200&format=webp&imagetools';
 import theMagicianFull from '../assets/occult_of_personality/1_TheMagician_2Ed.jpg?w=1200&format=webp&imagetools';
 import theEmperorFull from '../assets/occult_of_personality/4_TheEmperor_2Ed.jpg?w=1200&format=webp&imagetools';
 import theHierophantFull from '../assets/occult_of_personality/5_TheHierophant_2Ed.jpg?w=1200&format=webp&imagetools';
+import theLoversFull from '../assets/occult_of_personality/6_TheLovers_2Ed.jpg?w=1200&format=webp&imagetools';
 import theChariotFull from '../assets/occult_of_personality/7_TheChariot_2Ed.jpg?w=1200&format=webp&imagetools';
 import strengthFull from '../assets/occult_of_personality/8_Strength_2Ed.jpg?w=1200&format=webp&imagetools';
 import theHermitFull from '../assets/occult_of_personality/9_TheHermit_2Ed.jpg?w=1200&format=webp&imagetools';
@@ -41,8 +45,8 @@ import theWorldFull from '../assets/occult_of_personality/21_TheWorld_2Ed.jpg?w=
 
 const galleryItems: ScrollingGalleryItem[] = [
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: theFoolThumb,
+    image: theFoolFull,
     title: 'The Fool',
     desc: 'New beginnings, innocence, and a leap of faith. Pure potential before the journey begins. Trust the path even when you cannot see ahead.',
   },
@@ -77,8 +81,8 @@ const galleryItems: ScrollingGalleryItem[] = [
     desc: 'Tradition, spiritual authority, and shared belief systems. Mentorship and inherited wisdom. Do the structures you follow still serve your growth?',
   },
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: theLoversThumb,
+    image: theLoversFull,
     title: 'The Lovers',
     desc: 'Union, choice, and the alignment of values. The decisions that define who you are and the consequences that follow.',
   },
