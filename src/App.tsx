@@ -35,6 +35,10 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/artist-statement" element={<ArtistStatement />} />
         <Route path="/occult-of-personality" element={<OccultOfPersonality />} />
+        <Route
+          path="/occult-of-personality/first-edition"
+          element={<OccultOfPersonality firstEdition />}
+        />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/development" element={<Development />} />
         <Route path="/contact" element={<Contact />} />

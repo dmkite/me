@@ -1,10 +1,18 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export type ScrollingGalleryItem = {
   thumbnail?: string;
   image: string;
+  firstEditionThumbnail?: string;
+  firstEditionImage?: string;
   title: string;
   desc: string;
+};
+
+type EditionLink = {
+  label: string;
+  to: string;
 };
 
 type Props = {
@@ -13,9 +21,19 @@ type Props = {
   heroTitle: string;
   heroDesc: string;
   items: ScrollingGalleryItem[];
+  useFirstEdition?: boolean;
+  editionLink?: EditionLink;
 };
 
-function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: Props) {
+function ScrollingGallery({
+  namespace,
+  heroImage,
+  heroTitle,
+  heroDesc,
+  items,
+  useFirstEdition = false,
+  editionLink,
+}: Props) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const selectedItem = selectedIndex === null ? null : items[selectedIndex];
@@ -25,6 +43,11 @@ function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: 
   const showNext = () =>
     setSelectedIndex((i) => (i === null ? null : (i + 1) % items.length));
 
+  const getThumbnail = (item: ScrollingGalleryItem) =>
+    (useFirstEdition && item.firstEditionThumbnail) || item.thumbnail || item.image;
+  const getImage = (item: ScrollingGalleryItem) =>
+    (useFirstEdition && item.firstEditionImage) || item.image;
+
   return (
     <main className={`${namespace}-page`}>
       <section className={`${namespace}-hero`}>
@@ -33,6 +56,14 @@ function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: 
         <h1 className={`${namespace}-hero__title`}>{heroTitle}</h1>
         <p className={`${namespace}-hero__desc`}>{heroDesc}</p>
       </section>
+
+      {editionLink ? (
+        <div className={`${namespace}-edition-link`}>
+          <Link to={editionLink.to} className={`${namespace}-edition-link__link`}>
+            {editionLink.label}
+          </Link>
+        </div>
+      ) : null}
 
       <section className={`${namespace}-gallery`}>
         <div className={`${namespace}-gallery__grid`}>
@@ -51,7 +82,7 @@ function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: 
               }}
             >
               <img
-                src={item.thumbnail ?? item.image}
+                src={getThumbnail(item)}
                 alt={item.title}
                 loading="lazy"
                 className={`${namespace}-card__image`}
@@ -88,7 +119,7 @@ function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: 
                   ‹
                 </button>
                 <img
-                  src={selectedItem.image}
+                  src={getImage(selectedItem)}
                   alt={selectedItem.title}
                   className={`${namespace}-modal__image`}
                 />
