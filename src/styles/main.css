@@ -408,12 +408,51 @@ p {
   align-items: start;
 }
 
+.occult-modal__image-wrap,
+.gallery-modal__image-wrap {
+  position: relative;
+}
+
 .occult-modal__image,
 .gallery-modal__image {
   width: 100%;
   height: auto;
   border-radius: 12px;
   display: block;
+}
+
+.occult-modal__nav,
+.gallery-modal__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.occult-modal__nav:hover,
+.gallery-modal__nav:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.occult-modal__nav--prev,
+.gallery-modal__nav--prev {
+  left: 0.5rem;
+}
+
+.occult-modal__nav--next,
+.gallery-modal__nav--next {
+  right: 0.5rem;
 }
 
 .occult-modal__text,
@@ -616,5 +655,13 @@ p {
 @media (max-width: 768px) {
   .occult-modal__content {
     grid-template-columns: 1fr;
+  }
+
+  .contact-content,
+  .occult-gallery,
+  .gallery-gallery,
+  .development-content,
+  .artist-statement {
+    padding-bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
   }
 }

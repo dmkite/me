@@ -16,9 +16,14 @@ type Props = {
 };
 
 function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: Props) {
-  const [selectedItem, setSelectedItem] = useState<ScrollingGalleryItem | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  const closeModal = () => setSelectedItem(null);
+  const selectedItem = selectedIndex === null ? null : items[selectedIndex];
+  const closeModal = () => setSelectedIndex(null);
+  const showPrev = () =>
+    setSelectedIndex((i) => (i === null ? null : (i - 1 + items.length) % items.length));
+  const showNext = () =>
+    setSelectedIndex((i) => (i === null ? null : (i + 1) % items.length));
 
   return (
     <main className={`${namespace}-page`}>
@@ -31,17 +36,17 @@ function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: 
 
       <section className={`${namespace}-gallery`}>
         <div className={`${namespace}-gallery__grid`}>
-          {items.map((item) => (
+          {items.map((item, index) => (
             <article
               key={item.title}
               className={`${namespace}-card`}
               role="button"
               tabIndex={0}
-              onClick={() => setSelectedItem(item)}
+              onClick={() => setSelectedIndex(index)}
               onKeyDown={(event) => {
                 if (event.key === 'Enter' || event.key === ' ') {
                   event.preventDefault();
-                  setSelectedItem(item);
+                  setSelectedIndex(index);
                 }
               }}
             >
@@ -73,11 +78,29 @@ function ScrollingGallery({ namespace, heroImage, heroTitle, heroDesc, items }: 
               Close
             </button>
             <div className={`${namespace}-modal__content`}>
-              <img
-                src={selectedItem.image}
-                alt={selectedItem.title}
-                className={`${namespace}-modal__image`}
-              />
+              <div className={`${namespace}-modal__image-wrap`}>
+                <button
+                  type="button"
+                  className={`${namespace}-modal__nav ${namespace}-modal__nav--prev`}
+                  onClick={showPrev}
+                  aria-label="Previous"
+                >
+                  ‹
+                </button>
+                <img
+                  src={selectedItem.image}
+                  alt={selectedItem.title}
+                  className={`${namespace}-modal__image`}
+                />
+                <button
+                  type="button"
+                  className={`${namespace}-modal__nav ${namespace}-modal__nav--next`}
+                  onClick={showNext}
+                  aria-label="Next"
+                >
+                  ›
+                </button>
+              </div>
               <div className={`${namespace}-modal__text`}>
                 <h3 className={`${namespace}-modal__title`}>{selectedItem.title}</h3>
                 <p className={`${namespace}-modal__desc`}>{selectedItem.desc}</p>
