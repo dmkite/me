@@ -5,6 +5,7 @@ import ScrollingGallery, { type ScrollingGalleryItem } from '../components/Scrol
 import blankThumb from '../assets/occult_of_personality/0_Blank_0Ed.jpg?w=600&format=webp&imagetools';
 import theFoolThumb from '../assets/occult_of_personality/0_TheFool_2Ed.jpg?w=600&format=webp&imagetools';
 import theMagicianThumb from '../assets/occult_of_personality/1_TheMagician_2Ed.jpg?w=600&format=webp&imagetools';
+import theHighPriestessThumb from '../assets/occult_of_personality/2_TheHighPriestess_2Ed.jpg?w=600&format=webp&imagetools';
 import theEmperorThumb from '../assets/occult_of_personality/4_TheEmperor_2Ed.jpg?w=600&format=webp&imagetools';
 import theHierophantThumb from '../assets/occult_of_personality/5_TheHierophant_2Ed.jpg?w=600&format=webp&imagetools';
 import theLoversThumb from '../assets/occult_of_personality/6_TheLovers_2Ed.jpg?w=600&format=webp&imagetools';
@@ -26,6 +27,7 @@ import theWorldThumb from '../assets/occult_of_personality/21_TheWorld_2Ed.jpg?w
 import blankFull from '../assets/occult_of_personality/0_Blank_0Ed.jpg?w=1200&format=webp&imagetools';
 import theFoolFull from '../assets/occult_of_personality/0_TheFool_2Ed.jpg?w=1200&format=webp&imagetools';
 import theMagicianFull from '../assets/occult_of_personality/1_TheMagician_2Ed.jpg?w=1200&format=webp&imagetools';
+import theHighPriestessFull from '../assets/occult_of_personality/2_TheHighPriestess_2Ed.jpg?w=1200&format=webp&imagetools';
 import theEmperorFull from '../assets/occult_of_personality/4_TheEmperor_2Ed.jpg?w=1200&format=webp&imagetools';
 import theHierophantFull from '../assets/occult_of_personality/5_TheHierophant_2Ed.jpg?w=1200&format=webp&imagetools';
 import theLoversFull from '../assets/occult_of_personality/6_TheLovers_2Ed.jpg?w=1200&format=webp&imagetools';
@@ -57,8 +59,8 @@ const galleryItems: ScrollingGalleryItem[] = [
     desc: 'Willpower, resourcefulness, and turning intention into reality. You have everything you need — focus your energy and act.',
   },
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: theHighPriestessThumb,
+    image: theHighPriestessFull,
     title: 'The High Priestess',
     desc: 'Intuition, mystery, and inner knowledge. Look inward and trust what you find beneath the surface.',
   },
