@@ -88,7 +88,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theFool1EdThumb,
     firstEditionImage: theFool1EdFull,
     title: 'The Fool',
-    desc: 'New beginnings, innocence, and a leap of faith. Pure potential before the journey begins. Trust the path even when you cannot see ahead.',
+    desc: 'New beginnings, innocence, and a leap of faith. Pure potential before the journey begins. Trust the path even when you cannot see ahead.\n\nOriginal photo by Shelby Duncan',
   },
   {
     thumbnail: theMagicianThumb,
@@ -96,7 +96,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theMagician1EdThumb,
     firstEditionImage: theMagician1EdFull,
     title: 'The Magician',
-    desc: 'Willpower, resourcefulness, and turning intention into reality. You have everything you need — focus your energy and act.',
+    desc: 'Willpower, resourcefulness, and turning intention into reality. You have everything you need — focus your energy and act.\n\nOriginal photo by Robin Harper',
   },
   {
     thumbnail: theHighPriestessThumb,
@@ -104,13 +104,13 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theHighPriestess1EdThumb,
     firstEditionImage: theHighPriestess1EdFull,
     title: 'The High Priestess',
-    desc: 'Intuition, mystery, and inner knowledge. Look inward and trust what you find beneath the surface.',
+    desc: 'Intuition, mystery, and inner knowledge. Look inward and trust what you find beneath the surface.\n\nOriginal photo by David Gahr',
   },
   {
     thumbnail: blankThumb,
     image: blankFull,
     title: 'The Empress',
-    desc: 'Fertility, creativity, and nurturing abundance. Tend to what you are growing with patience and care.',
+    desc: 'Fertility, creativity, and nurturing abundance. Tend to what you are growing with patience and care.\n\nOriginal photo by Kevin Winter ',
   },
   {
     thumbnail: theEmperorThumb,
@@ -118,7 +118,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theEmperor1EdThumb,
     firstEditionImage: theEmperor1EdFull,
     title: 'The Emperor',
-    desc: 'Order, discipline, and authority. Leadership through structure, clear boundaries, and the willingness to take responsibility.',
+    desc: 'Order, discipline, and authority. Leadership through structure, clear boundaries, and the willingness to take responsibility.\n\nOriginal photo by David Burton',
   },
   {
     thumbnail: theHierophantThumb,
@@ -126,7 +126,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theHierophant1EdThumb,
     firstEditionImage: theHierophant1EdFull,
     title: 'The Hierophant',
-    desc: 'Tradition, spiritual authority, and shared belief systems. Mentorship and inherited wisdom. Do the structures you follow still serve your growth?',
+    desc: 'Tradition, spiritual authority, and shared belief systems. Mentorship and inherited wisdom. Do the structures you follow still serve your growth?\n\nOriginal photo by Denny Renshaw',
   },
   {
     thumbnail: theLoversThumb,
@@ -134,19 +134,19 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theLovers1EdThumb,
     firstEditionImage: theLovers1EdFull,
     title: 'The Lovers',
-    desc: 'Union, choice, and the alignment of values. The decisions that define who you are and the consequences that follow.',
+    desc: 'Union, choice, and the alignment of values. The decisions that define who you are and the consequences that follow.\n\nOriginal photo by Bettmann/Corbis',
   },
   {
     thumbnail: theChariotThumb,
     image: theChariotFull,
     title: 'The Chariot',
-    desc: 'Determination, control, and triumph through discipline. Victory comes only through focused effort and harnessing opposing forces.',
+    desc: 'Determination, control, and triumph through discipline. Victory comes only through focused effort and harnessing opposing forces.\n\nOriginal photo by Coco and Clair Clair',
   },
   {
     thumbnail: strengthThumb,
     image: strengthFull,
     title: 'Strength',
-    desc: 'Courage, patience, and inner fortitude. True power comes from mastering yourself, not dominating others.',
+    desc: 'Courage, patience, and inner fortitude. True power comes from mastering yourself, not dominating others.\n\nOriginal photo by William P. Gottlieb',
   },
   {
     thumbnail: theHermitThumb,
@@ -154,7 +154,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theHermit1EdThumb,
     firstEditionImage: theHermit1EdFull,
     title: 'The Hermit',
-    desc: 'Solitude, introspection, and the search for deeper truth. Step away from noise and listen to what silence teaches.',
+    desc: 'Solitude, introspection, and the search for deeper truth. Step away from noise and listen to what silence teaches.\n\nOriginal photo by Andre D. Wagner',
   },
   {
     thumbnail: wheelOfFortuneThumb,
@@ -162,7 +162,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: wheelOfFortune1EdThumb,
     firstEditionImage: wheelOfFortune1EdFull,
     title: 'Wheel of Fortune',
-    desc: 'Change, cycles, and forces beyond your control. What rises will fall; what falls will rise. Find your center within the turning.',
+    desc: 'Change, cycles, and forces beyond your control. What rises will fall; what falls will rise. Find your center within the turning.\n\nOriginal photo by Masayoshi Sukita',
   },
   {
     thumbnail: justiceThumb,
@@ -170,7 +170,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: justice1EdThumb,
     firstEditionImage: justice1EdFull,
     title: 'Justice',
-    desc: 'Clarity, fairness, and the consequences of past actions. Truth over mercy. What you set in motion returns to you.',
+    desc: 'Clarity, fairness, and the consequences of past actions. Truth over mercy. What you set in motion returns to you.\n\nOriginal photo by Mike Coppola',
   },
   {
     thumbnail: theHangedManThumb,
@@ -178,7 +178,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theHangedMan1EdThumb,
     firstEditionImage: theHangedMan1EdFull,
     title: 'The Hanged Man',
-    desc: 'Surrender, not defeat. A willing pause that shifts perspective entirely. The answer comes only from letting go.',
+    desc: 'Surrender, not defeat. A willing pause that shifts perspective entirely. The answer comes only from letting go.\n\nOriginal photo by Terry O\'Neill',
   },
   {
     thumbnail: deathThumb,
@@ -186,13 +186,13 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: death1EdThumb,
     firstEditionImage: death1EdFull,
     title: 'Death',
-    desc: 'Transformation, not ending. The necessary clearing away of what no longer serves you. Release your grip on what is already gone.',
+    desc: 'Transformation, not ending. The necessary clearing away of what no longer serves you. Release your grip on what is already gone.\n\nOriginal video by Doja Cat, Nina McNeely, and Tehillah De Castro',
   },
   {
     thumbnail: blankThumb,
     image: blankFull,
     title: 'Temperance',
-    desc: 'Balance, moderation, and the patient blending of opposites. Not compromise but integration. Find the middle path.',
+    desc: 'Balance, moderation, and the patient blending of opposites. Not compromise but integration. Find the middle path.\n\nOriginal photo by Brian Tamborello',
   },
   {
     thumbnail: theDevilThumb,
@@ -200,13 +200,13 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theDevil1EdThumb,
     firstEditionImage: theDevil1EdFull,
     title: 'The Devil',
-    desc: 'Bondage, materialism, and the shadow self. Attachments you mistake for necessities. The chains are loose — are you ready to see?',
+    desc: 'Bondage, materialism, and the shadow self. Attachments you mistake for necessities. The chains are loose — are you ready to see?\n\nOriginal video by Phil Griffin and Adam Frisch',
   },
   {
     thumbnail: blankThumb,
     image: blankFull,
     title: 'The Tower',
-    desc: 'Sudden upheaval and the destruction of false structures. What collapses needed to fall. From the rubble, something honest emerges.',
+    desc: 'Sudden upheaval and the destruction of false structures. What collapses needed to fall. From the rubble, something honest emerges.\n\nOriginal photo by X17 Online',
   },
   {
     thumbnail: theStarThumb,
@@ -214,7 +214,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theStar1EdThumb,
     firstEditionImage: theStar1EdFull,
     title: 'The Star',
-    desc: 'Hope renewed after devastation. Calm, clarity, and faith restored. Trust that what was broken is mending.',
+    desc: 'Hope renewed after devastation. Calm, clarity, and faith restored. Trust that what was broken is mending.\n\nOriginal photo by Tony McGee',
   },
   {
     thumbnail: theMoonThumb,
@@ -222,7 +222,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theMoon1EdThumb,
     firstEditionImage: theMoon1EdFull,
     title: 'The Moon',
-    desc: 'Illusion, anxiety, and the unconscious mind. Nothing is as it appears. Fear clouds your judgment — navigate carefully.',
+    desc: 'Illusion, anxiety, and the unconscious mind. Nothing is as it appears. Fear clouds your judgment — navigate carefully.\n\nOriginal photo by Ebru Yildiz',
   },
   {
     thumbnail: theSunThumb,
@@ -230,7 +230,7 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: theSun1EdThumb,
     firstEditionImage: theSun1EdFull,
     title: 'The Sun',
-    desc: 'Joy, vitality, and success without ambiguity. Clarity after confusion. Warmth, confidence, and things going right.',
+    desc: 'Joy, vitality, and success without ambiguity. Clarity after confusion. Warmth, confidence, and things going right.\n\nOriginal photo by Matthew Rolston',
   },
   {
     thumbnail: judgementThumb,
@@ -238,13 +238,13 @@ const galleryItems: ScrollingGalleryItem[] = [
     firstEditionThumbnail: judgement1EdThumb,
     firstEditionImage: judgement1EdFull,
     title: 'Judgement',
-    desc: 'Resurrection, reckoning, and a call to account. Evaluate yourself honestly — not with guilt, but with clarity for renewal.',
+    desc: 'Resurrection, reckoning, and a call to account. Evaluate yourself honestly — not with guilt, but with clarity for renewal.\n\nOriginal photo by Peter Noble',
   },
   {
     thumbnail: theWorldThumb,
     image: theWorldFull,
     title: 'The World',
-    desc: 'Completion, wholeness, and the end of a major cycle. A moment of integration before the next journey begins.',
+    desc: 'Completion, wholeness, and the end of a major cycle. A moment of integration before the next journey begins.\n\nOriginal photo by Daniel Dorsa',
   },
 ];
 
