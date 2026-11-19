@@ -2,10 +2,10 @@ import '../styles/main.css';
 import ScrollingGallery, { type ScrollingGalleryItem } from '../components/ScrollingGallery';
 
 // Thumbnails (600w webp) for gallery grid
-import blankThumb from '../assets/occult_of_personality/0_Blank_0Ed.jpg?w=600&format=webp&imagetools';
 import theFoolThumb from '../assets/occult_of_personality/0_TheFool_2Ed.jpg?w=600&format=webp&imagetools';
 import theMagicianThumb from '../assets/occult_of_personality/1_TheMagician_2Ed.jpg?w=600&format=webp&imagetools';
 import theHighPriestessThumb from '../assets/occult_of_personality/2_TheHighPriestess_2Ed.jpg?w=600&format=webp&imagetools';
+import theEmpressThumb from '../assets/occult_of_personality/3_TheEmpress_2Ed.jpg?w=600&format=webp&imagetools';
 import theEmperorThumb from '../assets/occult_of_personality/4_TheEmperor_2Ed.jpg?w=600&format=webp&imagetools';
 import theHierophantThumb from '../assets/occult_of_personality/5_TheHierophant_2Ed.jpg?w=600&format=webp&imagetools';
 import theLoversThumb from '../assets/occult_of_personality/6_TheLovers_2Ed.jpg?w=600&format=webp&imagetools';
@@ -16,6 +16,8 @@ import wheelOfFortuneThumb from '../assets/occult_of_personality/10_WheelOfFortu
 import justiceThumb from '../assets/occult_of_personality/11_Justice_2Ed.jpg?w=600&format=webp&imagetools';
 import theHangedManThumb from '../assets/occult_of_personality/12_TheHangedMan_2Ed.jpg?w=600&format=webp&imagetools';
 import deathThumb from '../assets/occult_of_personality/13_Death_2Ed.jpg?w=600&format=webp&imagetools';
+import temperanceThumb from '../assets/occult_of_personality/14_Temperance_2Ed.jpg?w=600&format=webp&imagetools';
+import theTowerThumb from '../assets/occult_of_personality/16_TheTower_2Ed.jpg?w=600&format=webp&imagetools';
 import theDevilThumb from '../assets/occult_of_personality/15_TheDevil_2Ed.jpg?w=600&format=webp&imagetools';
 import theStarThumb from '../assets/occult_of_personality/17_TheStar_2Ed.jpg?w=600&format=webp&imagetools';
 import theMoonThumb from '../assets/occult_of_personality/18_TheMoon_2Ed.jpg?w=600&format=webp&imagetools';
@@ -27,43 +29,56 @@ import theWorldThumb from '../assets/occult_of_personality/21_TheWorld_2Ed.jpg?w
 import theFool1EdThumb from '../assets/occult_of_personality/0_TheFool_1Ed.jpg?w=600&format=webp&imagetools';
 import theMagician1EdThumb from '../assets/occult_of_personality/1_TheMagician_1Ed.jpg?w=600&format=webp&imagetools';
 import theHighPriestess1EdThumb from '../assets/occult_of_personality/2_TheHighPriestess_1Ed.jpg?w=600&format=webp&imagetools';
+import theEmpress1EdThumb from '../assets/occult_of_personality/3_TheEmpress_1Ed.jpg?w=600&format=webp&imagetools';
 import theEmperor1EdThumb from '../assets/occult_of_personality/4_TheEmperor_1Ed.jpg?w=600&format=webp&imagetools';
 import theHierophant1EdThumb from '../assets/occult_of_personality/5_TheHierophant_1Ed.jpg?w=600&format=webp&imagetools';
 import theLovers1EdThumb from '../assets/occult_of_personality/6_TheLovers_1Ed.jpg?w=600&format=webp&imagetools';
+import theChariot1EdThumb from '../assets/occult_of_personality/7_TheChariot_1Ed.jpg?w=600&format=webp&imagetools';
+import strength1EdThumb from '../assets/occult_of_personality/8_Strength_1Ed.jpg?w=600&format=webp&imagetools';
 import theHermit1EdThumb from '../assets/occult_of_personality/9_TheHermit_1Ed.jpg?w=600&format=webp&imagetools';
 import wheelOfFortune1EdThumb from '../assets/occult_of_personality/10_WheelOfFortune_1Ed.jpg?w=600&format=webp&imagetools';
 import justice1EdThumb from '../assets/occult_of_personality/11_justice_1Ed.jpg?w=600&format=webp&imagetools';
 import theHangedMan1EdThumb from '../assets/occult_of_personality/12_TheHangedMan_1Ed.jpg?w=600&format=webp&imagetools';
 import death1EdThumb from '../assets/occult_of_personality/13_Death_1Ed.jpg?w=600&format=webp&imagetools';
+import temperance1EdThumb from '../assets/occult_of_personality/14_Temperance_1Ed.jpg?w=600&format=webp&imagetools';
 import theDevil1EdThumb from '../assets/occult_of_personality/15_TheDevil_1Ed.jpg?w=600&format=webp&imagetools';
+import theTower1EdThumb from '../assets/occult_of_personality/16_TheTower_1Ed.jpg?w=600&format=webp&imagetools';
 import theStar1EdThumb from '../assets/occult_of_personality/17_TheStar_1Ed.jpg?w=600&format=webp&imagetools';
 import theMoon1EdThumb from '../assets/occult_of_personality/18_TheMoon_1Ed.jpg?w=600&format=webp&imagetools';
 import theSun1EdThumb from '../assets/occult_of_personality/19_TheSun_1Ed.jpg?w=600&format=webp&imagetools';
 import judgement1EdThumb from '../assets/occult_of_personality/20_Judgement_1Ed.jpg?w=600&format=webp&imagetools';
+import theWorld1EdThumb from '../assets/occult_of_personality/21_TheWorld_1Ed.jpg?w=600&format=webp&imagetools';
 
 // Full size (1200w webp) for first edition prints, where available
 import theFool1EdFull from '../assets/occult_of_personality/0_TheFool_1Ed.jpg?w=1200&format=webp&imagetools';
 import theMagician1EdFull from '../assets/occult_of_personality/1_TheMagician_1Ed.jpg?w=1200&format=webp&imagetools';
 import theHighPriestess1EdFull from '../assets/occult_of_personality/2_TheHighPriestess_1Ed.jpg?w=1200&format=webp&imagetools';
+import theEmpress1EdFull from '../assets/occult_of_personality/3_TheEmpress_1Ed.jpg?w=1200&format=webp&imagetools';
 import theEmperor1EdFull from '../assets/occult_of_personality/4_TheEmperor_1Ed.jpg?w=1200&format=webp&imagetools';
 import theHierophant1EdFull from '../assets/occult_of_personality/5_TheHierophant_1Ed.jpg?w=1200&format=webp&imagetools';
 import theLovers1EdFull from '../assets/occult_of_personality/6_TheLovers_1Ed.jpg?w=1200&format=webp&imagetools';
+import theChariot1EdFull from '../assets/occult_of_personality/7_TheChariot_1Ed.jpg?w=1200&format=webp&imagetools';
+import strength1EdFull from '../assets/occult_of_personality/8_Strength_1Ed.jpg?w=1200&format=webp&imagetools';
 import theHermit1EdFull from '../assets/occult_of_personality/9_TheHermit_1Ed.jpg?w=1200&format=webp&imagetools';
 import wheelOfFortune1EdFull from '../assets/occult_of_personality/10_WheelOfFortune_1Ed.jpg?w=1200&format=webp&imagetools';
 import justice1EdFull from '../assets/occult_of_personality/11_justice_1Ed.jpg?w=1200&format=webp&imagetools';
 import theHangedMan1EdFull from '../assets/occult_of_personality/12_TheHangedMan_1Ed.jpg?w=1200&format=webp&imagetools';
 import death1EdFull from '../assets/occult_of_personality/13_Death_1Ed.jpg?w=1200&format=webp&imagetools';
+import temperance1EdFull from '../assets/occult_of_personality/14_Temperance_1Ed.jpg?w=1200&format=webp&imagetools';
 import theDevil1EdFull from '../assets/occult_of_personality/15_TheDevil_1Ed.jpg?w=1200&format=webp&imagetools';
+import theTower1EdFull from '../assets/occult_of_personality/16_TheTower_1Ed.jpg?w=1200&format=webp&imagetools';
 import theStar1EdFull from '../assets/occult_of_personality/17_TheStar_1Ed.jpg?w=1200&format=webp&imagetools';
 import theMoon1EdFull from '../assets/occult_of_personality/18_TheMoon_1Ed.jpg?w=1200&format=webp&imagetools';
 import theSun1EdFull from '../assets/occult_of_personality/19_TheSun_1Ed.jpg?w=1200&format=webp&imagetools';
 import judgement1EdFull from '../assets/occult_of_personality/20_Judgement_1Ed.jpg?w=1200&format=webp&imagetools';
+import theWorld1EdFull from '../assets/occult_of_personality/21_TheWorld_1Ed.jpg?w=1200&format=webp&imagetools';
 
 // Full size (1200w webp) for modal view
 import blankFull from '../assets/occult_of_personality/0_Blank_0Ed.jpg?w=1200&format=webp&imagetools';
 import theFoolFull from '../assets/occult_of_personality/0_TheFool_2Ed.jpg?w=1200&format=webp&imagetools';
 import theMagicianFull from '../assets/occult_of_personality/1_TheMagician_2Ed.jpg?w=1200&format=webp&imagetools';
 import theHighPriestessFull from '../assets/occult_of_personality/2_TheHighPriestess_2Ed.jpg?w=1200&format=webp&imagetools';
+import theEmpressFull from '../assets/occult_of_personality/3_TheEmpress_2Ed.jpg?w=1200&format=webp&imagetools';
 import theEmperorFull from '../assets/occult_of_personality/4_TheEmperor_2Ed.jpg?w=1200&format=webp&imagetools';
 import theHierophantFull from '../assets/occult_of_personality/5_TheHierophant_2Ed.jpg?w=1200&format=webp&imagetools';
 import theLoversFull from '../assets/occult_of_personality/6_TheLovers_2Ed.jpg?w=1200&format=webp&imagetools';
@@ -74,7 +89,9 @@ import wheelOfFortuneFull from '../assets/occult_of_personality/10_WheelOfFortun
 import justiceFull from '../assets/occult_of_personality/11_Justice_2Ed.jpg?w=1200&format=webp&imagetools';
 import theHangedManFull from '../assets/occult_of_personality/12_TheHangedMan_2Ed.jpg?w=1200&format=webp&imagetools';
 import deathFull from '../assets/occult_of_personality/13_Death_2Ed.jpg?w=1200&format=webp&imagetools';
+import temperanceFull from '../assets/occult_of_personality/14_Temperance_2Ed.jpg?w=1200&format=webp&imagetools';
 import theDevilFull from '../assets/occult_of_personality/15_TheDevil_2Ed.jpg?w=1200&format=webp&imagetools';
+import theTowerFull from '../assets/occult_of_personality/16_TheTower_2Ed.jpg?w=1200&format=webp&imagetools';
 import theStarFull from '../assets/occult_of_personality/17_TheStar_2Ed.jpg?w=1200&format=webp&imagetools';
 import theMoonFull from '../assets/occult_of_personality/18_TheMoon_2Ed.jpg?w=1200&format=webp&imagetools';
 import theSunFull from '../assets/occult_of_personality/19_TheSun_2Ed.jpg?w=1200&format=webp&imagetools';
@@ -107,8 +124,10 @@ const galleryItems: ScrollingGalleryItem[] = [
     desc: 'Intuition, mystery, and inner knowledge. Look inward and trust what you find beneath the surface.\n\nOriginal photo by David Gahr',
   },
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: theEmpressThumb,
+    image: theEmpressFull,
+    firstEditionThumbnail: theEmpress1EdThumb,
+    firstEditionImage: theEmpress1EdFull,
     title: 'The Empress',
     desc: 'Fertility, creativity, and nurturing abundance. Tend to what you are growing with patience and care.\n\nOriginal photo by Kevin Winter ',
   },
@@ -139,12 +158,16 @@ const galleryItems: ScrollingGalleryItem[] = [
   {
     thumbnail: theChariotThumb,
     image: theChariotFull,
+    firstEditionThumbnail: theChariot1EdThumb,
+    firstEditionImage: theChariot1EdFull,
     title: 'The Chariot',
     desc: 'Determination, control, and triumph through discipline. Victory comes only through focused effort and harnessing opposing forces.\n\nOriginal photo by Coco and Clair Clair',
   },
   {
     thumbnail: strengthThumb,
     image: strengthFull,
+    firstEditionThumbnail: strength1EdThumb,
+    firstEditionImage: strength1EdFull,
     title: 'Strength',
     desc: 'Courage, patience, and inner fortitude. True power comes from mastering yourself, not dominating others.\n\nOriginal photo by William P. Gottlieb',
   },
@@ -189,8 +212,10 @@ const galleryItems: ScrollingGalleryItem[] = [
     desc: 'Transformation, not ending. The necessary clearing away of what no longer serves you. Release your grip on what is already gone.\n\nOriginal video by Doja Cat, Nina McNeely, and Tehillah De Castro',
   },
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: temperanceThumb,
+    image: temperanceFull,
+    firstEditionThumbnail: temperance1EdThumb,
+    firstEditionImage: temperance1EdFull,
     title: 'Temperance',
     desc: 'Balance, moderation, and the patient blending of opposites. Not compromise but integration. Find the middle path.\n\nOriginal photo by Brian Tamborello',
   },
@@ -203,8 +228,10 @@ const galleryItems: ScrollingGalleryItem[] = [
     desc: 'Bondage, materialism, and the shadow self. Attachments you mistake for necessities. The chains are loose — are you ready to see?\n\nOriginal video by Phil Griffin and Adam Frisch',
   },
   {
-    thumbnail: blankThumb,
-    image: blankFull,
+    thumbnail: theTowerThumb,
+    image: theTowerFull,
+    firstEditionThumbnail: theTower1EdThumb,
+    firstEditionImage: theTower1EdFull,
     title: 'The Tower',
     desc: 'Sudden upheaval and the destruction of false structures. What collapses needed to fall. From the rubble, something honest emerges.\n\nOriginal photo by X17 Online',
   },
@@ -243,6 +270,8 @@ const galleryItems: ScrollingGalleryItem[] = [
   {
     thumbnail: theWorldThumb,
     image: theWorldFull,
+    firstEditionThumbnail: theWorld1EdThumb,
+    firstEditionImage: theWorld1EdFull,
     title: 'The World',
     desc: 'Completion, wholeness, and the end of a major cycle. A moment of integration before the next journey begins.\n\nOriginal photo by Daniel Dorsa',
   },
